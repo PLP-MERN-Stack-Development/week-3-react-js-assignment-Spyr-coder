@@ -1,86 +1,73 @@
-<<<<<<< HEAD
-# React + Vite
+# 🎨 Week 3: React.js, JSX, and Tailwind CSS – Front-End Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Week 3 assignment! This project is a responsive React application built with Vite, JSX, Tailwind CSS, and React Router. It demonstrates component architecture, state management with hooks, and integration with a public API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔹 Reusable UI components (`Button`, `Card`, `Navbar`, `Footer`)
+- 🔄 Task Manager with add, delete, complete, and filter
+- 🌐 API integration with JSONPlaceholder
+- 🌗 Light & Dark theme toggle
+- 📱 Fully responsive layout (mobile-first design)
+- 💨 Styled with Tailwind CSS utility classes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19816189&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+---
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+## 🛠️ Technologies Used
 
-## Assignment Overview
+- ⚛️ React.js (via Vite)
+- 🧠 React Hooks (`useState`, `useEffect`, `useContext`)
+- 🧩 Custom Hook: `useLocalStorage`
+- 💅 Tailwind CSS
+- 🔗 React Router
+- 🌐 JSONPlaceholder API
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+---
 
-## Getting Started
+## 📸 Screenshot
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+![App Screenshot](./public/screenshot.png)
 
-## Files Included
+---
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## 📂 Folder Structure
 
-## Requirements
+📁 src
+├── components/
+│ ├── Button.jsx
+│ ├── Card.jsx
+│ ├── Footer.jsx
+│ ├── Navbar.jsx
+│ ├── TaskManager.jsx
+│ └── Posts.jsx
+├── layouts/
+│ └── Layout.jsx
+├── pages/
+│ └── Home.jsx
+├── context/
+│ └── ThemeContext.jsx
+├── hooks/
+│ └── useLocalStorage.js
+├── App.jsx
+└── main.jsx
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+---
 
-## Project Structure
+## 📦 Installation & Setup
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+Make sure Node.js (v18+) and npm are installed.
 
-## Submission
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+# Clone your repository
+git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-Spyr-coder.git
+cd week-3-react-js-assignment-Spyr-coder
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+# Install dependencies
+npm install
 
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
->>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d
+# Run the dev server
+npm run dev
+🌐 Live Demo
+👉 View Deployed App on Netlify https://fanciful-sundae-fd7a7f.netlify.app/
