@@ -1,3 +1,85 @@
+<<<<<<< HEAD
+import React, { useState } from "react";
+
+const TaskManager = () => {
+  const [tasks, setTasks] = useState([]);
+  const [input, setInput] = useState("");
+  const [filter, setFilter] = useState("all");
+
+  const addTask = () => {
+    if (input.trim()) {
+      setTasks([...tasks, { text: input, completed: false }]);
+      setInput("");
+    }
+  };
+
+  const toggleTask = (index) => {
+    const updated = [...tasks];
+    updated[index].completed = !updated[index].completed;
+    setTasks(updated);
+  };
+
+  const deleteTask = (index) => {
+    const updated = tasks.filter((_, i) => i !== index);
+    setTasks(updated);
+  };
+
+  const filteredTasks = tasks.filter((task) => {
+    if (filter === "active") return !task.completed;
+    if (filter === "completed") return task.completed;
+    return true;
+  });
+
+  return (
+    <div>
+      <h1 className="text-2xl font-bold mb-4">Task Manager</h1>
+
+      <div className="flex mb-4">
+        <input
+          type="text"
+          className="flex-grow p-2 rounded-l-md border border-gray-400 text-black"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Add a new task"
+        />
+        <button onClick={addTask} className="bg-blue-600 text-white px-4 rounded-r-md">
+          Add
+        </button>
+      </div>
+
+      <div className="space-x-2 mb-4">
+        <button onClick={() => setFilter("all")} className="px-3 py-1 bg-gray-700 rounded">
+          All
+        </button>
+        <button onClick={() => setFilter("active")} className="px-3 py-1 bg-gray-700 rounded">
+          Active
+        </button>
+        <button onClick={() => setFilter("completed")} className="px-3 py-1 bg-gray-700 rounded">
+          Completed
+        </button>
+      </div>
+
+      <ul>
+        {filteredTasks.map((task, index) => (
+          <li
+            key={index}
+            className="flex justify-between items-center bg-gray-800 p-2 mb-2 rounded"
+          >
+            <span
+              onClick={() => toggleTask(index)}
+              className={`flex-grow cursor-pointer ${
+                task.completed ? "line-through text-gray-400" : ""
+              }`}
+            >
+              {task.text}
+            </span>
+            <button onClick={() => deleteTask(index)} className="text-red-400 px-2">
+              ❌
+            </button>
+          </li>
+        ))}
+      </ul>
+=======
 import React, { useState, useEffect } from 'react';
 import Button from './Button';
 
@@ -161,8 +243,13 @@ const TaskManager = () => {
           {tasks.filter((task) => !task.completed).length} tasks remaining
         </p>
       </div>
+>>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d
     </div>
   );
 };
 
+<<<<<<< HEAD
+export default TaskManager;
+=======
 export default TaskManager; 
+>>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d

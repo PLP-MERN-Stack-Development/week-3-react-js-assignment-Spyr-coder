@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './layouts/Layout';
+import Home from './pages/Home';
+
+const App = () => {
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Add other routes later */}
+        </Routes>
+      </Layout>
+    </Router>
+  );
+};
+
+export default App;
+=======
 import { useState } from 'react';
 import './App.css';
 
@@ -70,3 +91,4 @@ function App() {
 }
 
 export default App; 
+>>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d

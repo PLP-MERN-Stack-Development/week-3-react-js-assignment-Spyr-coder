@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+// src/components/Button.jsx
+import React from 'react';
+import clsx from 'clsx';
+
+const base = "px-4 py-2 font-semibold rounded-2xl transition-all shadow-sm hover:shadow-md focus:outline-none";
+
+const variants = {
+  primary: "bg-blue-600 text-white hover:bg-blue-700",
+  secondary: "bg-indigo-500 text-white hover:bg-indigo-600",
+  danger: "bg-red-500 text-white hover:bg-red-600"
+};
+
+const Button = ({ children, variant = "primary", ...props }) => {
+  return (
+    <button className={clsx(base, variants[variant])} {...props}>
+=======
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -52,11 +69,15 @@ const Button = ({
       onClick={onClick}
       {...rest}
     >
+>>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d
       {children}
     </button>
   );
 };
 
+<<<<<<< HEAD
+export default Button;
+=======
 Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
@@ -67,3 +88,4 @@ Button.propTypes = {
 };
 
 export default Button; 
+>>>>>>> fa18339b372459194d22e94cbaeea82a9d5a797d
