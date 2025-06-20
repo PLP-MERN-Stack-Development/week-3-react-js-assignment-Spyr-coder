@@ -27,7 +27,8 @@ Welcome to my Week 3 assignment! This project is a responsive React application 
 ---
 
 ## 📸 Screenshot
-(./public/screenshot.png)
+![App Screenshot](screenshot.png)
+
 
 ---
 
